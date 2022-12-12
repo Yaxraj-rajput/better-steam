@@ -172,76 +172,6 @@ body {
   display: none;
 }
 
-@media (max-width: 1600px) {
-  .navbar {
-    padding: 10px 30px;
-  }
-
-  .bi-list {
-    position: absolute;
-    right: 20px;
-    top: 0px;
-  }
-
-  .navbar .bi {
-    display: block;
-    color: #fff;
-    margin: 10px 25px;
-    font-size: 22px;
-  }
-
-  .navbar #hehe {
-    display: block;
-  }
-  .nav-contents {
-    height: 100vh;
-    width: 80%;
-
-    background: rgba(13, 13, 13, 0.55);
-
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    top: 0;
-    right: -100%;
-    position: absolute;
-
-    z-index: 999;
-    transition: 0.2s;
-  }
-
-  .nav-contents ul a {
-    display: block;
-    color: #bdb5b2;
-    font-size: 2rem;
-    padding: 10px 30px;
-  }
-
-  .nav-contents ul a:hover {
-    /* From https://css.glass */
-    background: rgba(225, 212, 212, 0.55);
-
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    color: rgb(172, 165, 165);
-  }
-
-  .nav-contents .nav-btn {
-    float: none;
-    margin-left: 25px;
-    margin-top: 10px;
-  }
-
-  .nav-btn {
-    background-color: transparent;
-    color: white;
-  }
-  .install-btn {
-    visibility: hidden;
-  }
-}
-
 .content-div {
   position: absolute;
   display: flex;
@@ -364,7 +294,10 @@ body {
       rgba(0, 0, 0, 1) 100%
     ),
     url(https://www.callofduty.com/content/dam/atvi/infinityward/iw-touchui/news/feature/2022/11/WZ2-S01-DMZ-TACTICS-TOUT.jpg);
+  background-size: contain;
   background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .slide:nth-of-type(2) {
@@ -374,7 +307,10 @@ body {
       rgba(0, 0, 0, 1) 100%
     ),
     url(https://images4.alphacoders.com/115/1151767.jpg);
+  background-size: contain;
   background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .slide:nth-of-type(3) {
@@ -384,7 +320,10 @@ body {
       rgba(0, 0, 0, 1) 100%
     ),
     url(https://wallpaperaccess.com/full/3450334.jpg);
+  background-size: contain;
   background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .slide:nth-of-type(4) {
@@ -394,7 +333,10 @@ body {
       rgba(0, 0, 0, 1) 100%
     ),
     url(https://wallpaperaccess.com/full/2849122.jpg);
+  background-size: contain;
   background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .slide_buttons {
@@ -479,8 +421,7 @@ a.slide_btn {
 
 form {
   margin-top: 1rem;
-  position: absolute;
-  width: 18rem;
+  position: relative;
   flex: 100%;
   z-index: 999;
 }
@@ -490,6 +431,7 @@ form {
   top: 0;
   left: 0;
   width: 100%;
+  text-align: center;
 }
 
 .chosen-value {
@@ -699,4 +641,154 @@ form {
 
 .content-left-cards-btn:hover {
   background-color: #428cc6;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+
+  .bi-list {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+  }
+
+  .navbar .bi {
+    display: block;
+    color: #fff;
+    margin: 10px 25px;
+    font-size: 22px;
+  }
+
+  .navbar #hehe {
+    display: block;
+  }
+  .nav-contents {
+    height: 100vh;
+    width: 80%;
+
+    background: rgba(13, 13, 13, 0.55);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    top: 0;
+    right: -100%;
+    position: absolute;
+
+    z-index: 999;
+    transition: 0.2s;
+  }
+
+  .nav-contents ul a {
+    display: block;
+    color: #bdb5b2;
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  .nav-contents ul a:hover {
+    /* From https://css.glass */
+    background: rgba(225, 212, 212, 0.55);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: rgb(172, 165, 165);
+  }
+
+  .nav-contents .nav-btn {
+    float: none;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .nav-btn {
+    background-color: transparent;
+    color: white;
+  }
+  .install-btn {
+    visibility: hidden;
+  }
+
+  .content-div-left {
+    /* From https://css.glass */
+    padding: 0.7rem;
+    border-radius: 15px;
+    flex: 100%;
+  }
+
+  .content-div-right {
+    /* From https://css.glass */
+    border-radius: 15px;
+    flex: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .content-div {
+    width: 90%;
+  }
+
+  .content-nav {
+    background-color: #111;
+    padding: 0.8rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .content-genre {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    align-items: center;
+  }
+
+  .content-genre li {
+    margin-left: 0.5rem;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+
+  .content-genre li a {
+    text-decoration: none;
+    color: rgb(126, 118, 118);
+    transition: 0.2s ease-in;
+    padding: 0;
+  }
+
+  .content-search {
+    padding: 1rem;
+    flex: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #171b20;
+    color: #bdb5b2;
+    font-size: large;
+  }
+
+  .slider {
+    margin: 0 auto;
+    width: 98%;
+    margin-top: 1rem;
+  }
+
+  .slide_viewer {
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .directional_nav {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: -145px;
+  }
 }
