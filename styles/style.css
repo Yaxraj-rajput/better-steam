@@ -745,13 +745,14 @@ form {
     flex-direction: row;
     flex: 100%;
     align-items: center;
+    justify-content: center;
   }
 
   .content-genre li {
     margin-left: 0.5rem;
     list-style: none;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 0.7rem;
   }
 
   .content-genre li a {
