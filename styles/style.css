@@ -759,6 +759,7 @@ form {
     color: rgb(126, 118, 118);
     transition: 0.2s ease-in;
     padding: 0;
+    font-size: smaller;
   }
 
   .content-search {
